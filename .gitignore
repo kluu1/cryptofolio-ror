@@ -6,6 +6,13 @@
 
 # Ignore bundler config.
 /.bundle
+/.env
+/.env.local
+/.env.test.local
+/.env.development
+
+##specific encryption keys
+/config/symmetric-encryption.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -13,15 +20,76 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
-
-# Ignore uploaded files in development.
+# Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+
+/node_modules
+/yarn-error.log
+/package-lock.json
+
+/public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+*.swp
+*.swo
+*.swn
+run.*
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+/sync/*
+/junk
+/backups
+/kube/id_*
+/loader.rb
+
+*.DS_Store
+env-backup*
+
+dump.rdb
+nohup.out
+*test.rb
+text-wrap.rb
+coverage/
+
+TAGS
+.pryrc
+.pry_history
+
+# Created by https://www.gitignore.io/api/visualstudiocode
+# Edit at https://www.gitignore.io/?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*      # Maybe .vscode/**/* instead - see comments
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+**/.history
+
+# End of https://www.gitignore.io/api/visualstudiocode
+
+.idea/*
+
+# Not quite sure if we should ignore or not. Seemed to have a lot to do with caching stuff
+.yardoc
+# Ignore the temp place we're putting the YARD docs until we figure out what to do with them
+temp_docs/**/*.*
+!temp_docs/.keep
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+test/
+tmp/
